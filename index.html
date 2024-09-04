@@ -8,28 +8,31 @@
 
 
 <body>
-    <header>
+    <!-- ARIA role for banner -->
+    <header role="banner">
         <img src="images/Profile.jpg" alt="My profile picture" width="150" height="150">
         <h2>Christian Jorge Martin</h2>
         <p>RRC Student - Application Development & Delivery (AD&D)</p>
         <h3>Contact Information</h3>
-        <ul>
+        <!-- ARIA role for Contact Information -->
+        <ul role="Contact Information">
             <li><b>Phone:</b> (204) 380-9046</li>
             <li><b>Address:</b> 101 Paulin St., Winnipeg, MB.</li>
-            <li><b>Email:</b> <a href="cmartin60@academic.rrc.ca">cmartin60@academic.rrc.ca</a></li>
+            <li><b>Email:</b> <a href="mailto:cmartin60@academic.rrc.ca">cmartin60@academic.rrc.ca</a></li>
             <li><b>GitHub:</b> <a href="https://github.com/cmartin60">https://github.com/cmartin60</a></li>
             <li><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/cmartin29/">https://www.linkedin.com/in/cmartin29/</a></li>
         </ul>
     </header>
 
-<main>
-    <section>
-    <h3>About Me</h3>
+<!-- ARIA role for main content -->
+<main role="main">
+    <section aria-labelledby="About-Me">
+    <h3 id="About-Me">About Me</h3>
     A young professional working towards an Application Development & Delivery Diploma, with a year of experience, is proficient in workstation setup, troubleshooting, and resolving hardware and software issues. I have experience reviewing and enhancing logging systems, proposing incident response plans, and ensuring compliance with relevant policies. Efficiently manage cloud configurations, conduct security scans, and implement automation to optimize operational efficiency. As a strong coordinator, I handle on-call alerts, manage resources, and provide versatile IT support to meet project goals.
     </section>
 
-    <section>
-        <h3>Skills</h3>
+    <section aria-labelledby="Skills">
+        <h3 id="Skills">Skills</h3>
             <ul>
                 <li>languages: English, and Tagalog/Filipino</li>
                 <li>Version control (Git & Github)</li>
@@ -40,8 +43,8 @@
         </ul>
     </section>
 
-    <section>
-    <h3>Experience</h3>
+    <section aria-labelledby="Experience">
+    <h3 id="Experience">Experience</h3>
     <ul>
         <li><b>Payroll Accountant</b> - HyLife, 2022-2023</li>
             <ul>
@@ -72,8 +75,8 @@
     </ul>
     </section>    
 
-    <section>
-    <h3>Education</h3>
+    <section aria-labelledby="Education">
+    <h3 id="Education">Education</h3>
     <ul>
         <li><b>Application Development & Delivery (AD&D)</b> - Red River College, Jan 2024 - Present</li>
         Term 1
@@ -108,19 +111,21 @@
     </ul>
     </section>
 
-      
-    <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+    <!-- ARIA role for graphic and descriptive title -->
+    <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="logo-title">
+        <title id="logo-title">AI generated logo</title>
         <!-- Background Circle -->
-        <circle cx="100" cy="100" r="90" fill="#1E90FF" />
+        <circle cx="100" cy="100" r="90" fill="#1E90FF"/>
 
         <!-- Inner Triangle -->
-        <polygon points="100,40 160,160 40,160" fill="#FFFFFF" />
+        <polygon points="100,40 160,160 40,160" fill="#FFFFFF"/>
 
         <!-- Circle Cutout -->
-        <circle cx="100" cy="100" r="40" fill="#1E90FF" />
+        <circle cx="100" cy="100" r="40" fill="#1E90FF"/>
     </svg>
     
-    <footer>
+    <!-- ARIA role for content information -->
+    <footer role="contentinfo">
         <p>
             Thank you for considering my application. Looking forward to your feedback!
         </p>
